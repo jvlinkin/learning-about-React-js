@@ -8,7 +8,7 @@ function Formulario(){
         console.log('Cadastro realizado com sucesso.')
     }
 
-    //hooks
+    //hooks - useState
     const [name, setName] = useState()
     const [password, setPassword] = useState()
 
@@ -18,10 +18,9 @@ function Formulario(){
         <form onSubmit={cadastrar}>
 
             <label htmlFor="name">Name: </label>
-            <input type="text" id="name"
+            <input type="text"
              name="name"
              placeholder="Digite seu nome"
-             value= {name}
              onChange={(e) => setName(e.target.value)}
              />
             
